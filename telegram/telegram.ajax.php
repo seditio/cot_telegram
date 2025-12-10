@@ -12,7 +12,7 @@ require_once cot_langfile('telegram', 'plug');
 require_once cot_incfile('telegram', 'plug');
 require_once cot_incfile('telegram', 'plug', 'cfg.' . $cfg['plugin']['telegram']['code']);
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && $a == 'send' && cot_check_xp()) {
 
   $content = sedby_telegram_import();
 

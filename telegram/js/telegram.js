@@ -4,16 +4,16 @@ $(function() {
 
 		$(this).find('.alert').hide();
 
-		var action = $(this).attr('action');
-		var that = this;
+		const action = $(this).attr('action');
+		const that = this;
 
-		$.post(action, $(this).serialize(), function(resp) {
-			if (resp.status) {
+		$.post(action, $(this).serialize(), function(response) {
+			if (response.status) {
 				// Okay, message sent
-				$(that).find('.alert-success').html(resp.message).slideDown().delay(3000).slideUp();
+				$(that).find('.alert-success').html(response.message).slideDown().delay(3000).slideUp();
 			} else {
 				// Show errors
-				$(that).find('.alert-danger').html(resp.message).slideDown().delay(3000).slideUp();
+				$(that).find('.alert-danger').html(response.message).slideDown().delay(3000).slideUp();
 			}
 		});
 
@@ -21,5 +21,6 @@ $(function() {
 		  function() {
 		    $(that).find('input[type=text], input[type=email], textarea').val('');
 		  }, 3000);
+
 	});
 });

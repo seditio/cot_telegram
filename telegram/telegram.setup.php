@@ -4,8 +4,8 @@
  * Code=telegram
  * Name=Telegram
  * Description=Semd form to Telegram bot
- * Version=1.00b
- * Date=2025-11-30
+ * Version=1.01b
+ * Date=2025-12-10
  * Author=SED.by
  * Copyright=&copy;2025 SED.by
  * Auth_guests=R

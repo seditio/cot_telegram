@@ -15,8 +15,8 @@ defined('COT_CODE') or die('Wrong URL');
  * Plugin Info
  */
 
-$L['info_name'] = '[SEDBY] Telegram Notifications';
-$L['info_desc'] = 'Обратная связь в Телеграм';
+$L['info_name'] = '[SEDBY] Telegram';
+$L['info_desc'] = 'Обратная связь в Телеграм бот';
 
 /**
  * Plugin Config
@@ -33,6 +33,5 @@ $L['info_desc'] = 'Обратная связь в Телеграм';
 $L['telegram_message_from'] = 'Сообщение с сайта:';
 $L['telegram_phone'] = 'Телефон';
 
-$L['telegram_message_sent'] = 'Сообщение отправлено';
 $L['telegram_message_sent'] = 'Сообщение отправлено';
 $L['telegram_message_not_sent'] = 'Ошибка отправки';

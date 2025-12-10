@@ -1,8 +1,8 @@
 <!-- BEGIN: MAIN -->
-<form class="telegram" method="post" action="index.php?r=telegram">
+<form class="telegram" method="post" action="index.php?r=telegram&a=send">
 	<div class="mb-2">
 		<label class="form-label text-danger small mb-1 opacity-75" for="{PHP.L.Username}">{PHP.L.Username}:</label>
-		<input type="text" name="{PHP.L.Username}" class="form-control" minlength="3" maxlength="12" required />
+		<input type="text" name="{PHP.L.Username}" class="form-control" minlength="3" maxlength="25" required />
 	</div>
 
 	<div class="mb-2">
@@ -12,7 +12,7 @@
 
 	<div class="mb-2">
 		<label class="form-label text-danger small mb-1 opacity-75" for="{PHP.L.Email}">{PHP.L.Email}:</label>
-		<input type="email" name="{PHP.L.Email}" class="form-control" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" required />
+		<input type="email" name="{PHP.L.Email}" class="form-control" pattern="^\S+@\S+\.\S+$" required />
 	</div>
 
 	<div class="mb-3">
